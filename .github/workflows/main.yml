@@ -1,0 +1,39 @@
+name: Deploy to Pterodactyl
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Compress files
+      run: zip -r bot.zip ./*
+    - name: Upload and extract bot files
+      run: |
+        echo "Uploading bot files..."
+        # Upload the zip file
+        curl -X POST \
+          "https://panel.cybrancee.com/api/client/server/57a279b9/files/write?file=/bot.zip" \
+          -H "Authorization: Bearer ${{ secrets.PTERO_API_KEY }}" \
+          -H "Content-Type: application/binary" \
+          --data-binary "@bot.zip"
+        
+        echo "Extracting files..."
+        # Commande pour décompresser le fichier
+        curl -X POST \
+          "https://panel.cybrancee.com/api/client/server/57a279b9/files/decompress" \
+          -H "Authorization: Bearer ${{ secrets.PTERO_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d '{"root": "/", "file": "bot.zip"}'
+    - name: Restart server
+      run: |
+        echo "Redémarrage du serveur..."
+        sleep 5
+        curl -X POST \
+          "https://panel.cybrancee.com/api/client/servers/${{ secrets.PTERO_SERVER_ID }}/power" \
+          -H "Authorization: Bearer ${{ secrets.PTERO_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d '{"signal": "restart"}'
