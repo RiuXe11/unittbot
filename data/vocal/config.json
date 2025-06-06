@@ -1,0 +1,18 @@
+{
+  "1177269675307061339": {
+    "enabled": true,
+    "categoryId": "1299860947875135653",
+    "hubName": "➕ Créer un salon",
+    "hubCategoryId": "1299860947875135653",
+    "channelNameTemplate": "Salon de {MemberDisplayName}",
+    "showSettingsEmbed": true
+  },
+  "1302988721720787044": {
+    "enabled": true,
+    "categoryId": "1303651662317096980",
+    "hubName": "➕ Créer un salon",
+    "hubCategoryId": "1302988721720787046",
+    "channelNameTemplate": "🔊 - Salon de {MemberDisplayName}",
+    "showSettingsEmbed": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": 4,
+  "text": "[\"⌛ Bientôt\",\"❌ Annulé\",\"💎 Bienvenue\"]",
+  "isMultiple": true,
+  "multipleMessages": [
+    "⌛ Bientôt",
+    "❌ Annulé",
+    "💎 Bienvenue"
+  ],
+  "messageCount": 3,
+  "rotationDelay": 3000
+}

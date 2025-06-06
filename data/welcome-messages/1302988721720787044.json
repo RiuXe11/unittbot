@@ -1,0 +1,21 @@
+{
+  "messages": [
+    {
+      "type": "message",
+      "channelId": "1303639066582978570",
+      "content": "Coucou {user} ! Bienvenue sur {server} !"
+    }
+  ],
+  "embeds": [
+    {
+      "type": "embed",
+      "channelId": "1303639066582978570",
+      "title": "HOLAAAA",
+      "description": "Bienvenue {user} sur {server} !",
+      "color": "#ffffff",
+      "footer": "Welcome !",
+      "timestamp": true,
+      "image": "1302988721720787044_1730884886498.png"
+    }
+  ]
+}

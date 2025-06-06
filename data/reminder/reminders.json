@@ -1,0 +1,19 @@
+{
+  "reminder_1730733223867_wbf7flbiu": {
+    "channel": "1302924963644440636",
+    "recurring": true,
+    "title": "Test",
+    "description": "Salut les terriens",
+    "color": "#FF0000",
+    "reactions": [
+      "✅",
+      "👀"
+    ],
+    "schedule": {
+      "monday": [
+        "16:19"
+      ]
+    },
+    "message": "<@&1177276021519683615> oui les zigoto"
+  }
+}

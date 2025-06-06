@@ -1,0 +1,18 @@
+{
+  "messages": {
+    "1303822451876302909": {
+      "channelId": "1303821502487199805",
+      "channelName": "général",
+      "repeat": true,
+      "isEmbed": true,
+      "title": "ATTENTION",
+      "description": "MERCI DE RESPECTER :\n\n> - Gotaga",
+      "color": "#00fff7",
+      "image": "https://cdn.discordapp.com/attachments/1303651405311246400/1303822653093576784/png-transparent-welcome-text-illustration-computer-icons-desktop-welcome-miscellaneous-image-file-formats-text-removebg-preview.png?ex=672d26f8&is=672bd578&hm=cd1e1571f29e5b0efe78075baebfb18a54c885209969602ad82ad5b75917485f&",
+      "footer": "Les pieds",
+      "timestamp": true,
+      "lastMessageId": "1353407041812562031",
+      "lastMessageTimestamp": 1742747778963
+    }
+  }
+}
